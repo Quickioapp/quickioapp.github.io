@@ -1,0 +1,1 @@
+const search=document.getElementById('toolSearch');const cards=[...document.querySelectorAll('.tool-card')];if(search){search.addEventListener('input',()=>{const q=search.value.toLowerCase().trim();cards.forEach(c=>{c.style.display=(!q||(c.dataset.search||'').includes(q)||c.innerText.toLowerCase().includes(q))?'flex':'none'})})}
